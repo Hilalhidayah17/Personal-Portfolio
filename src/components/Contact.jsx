@@ -37,7 +37,10 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex-1 w-full">
-            <form className="space-y-4">
+            <form
+              className="space-y-4"
+              action="mailto:hilalhidayah589456@gmail.com"
+            >
               <div>
                 <label htmlFor="name" className="block mb-2">
                   Your Name
@@ -46,18 +49,20 @@ export default function Contact() {
                   type="text"
                   className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                   focus:border-green-400"
-                  placeholder="Enter You Name"
+                  placeholder="Albert Wesker"
+                  id="name"
                 />
               </div>
               <div>
-                <label htmlFor="emial" className="block mb-2">
+                <label htmlFor="email" className="block mb-2">
                   Email
                 </label>
                 <input
                   type="text"
                   className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                   focus:border-green-400"
-                  placeholder="Enter You Email"
+                  placeholder="example@gmail.com"
+                  id="email"
                 />
               </div>
               <div>
@@ -69,7 +74,8 @@ export default function Contact() {
                   className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none
                   focus:border-green-400"
                   rows="5"
-                  placeholder="Enter You Message"
+                  placeholder="Message here ..."
+                  id="message"
                 />
               </div>
               <button

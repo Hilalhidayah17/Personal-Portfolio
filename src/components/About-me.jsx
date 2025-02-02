@@ -15,11 +15,11 @@ export default function About() {
           <div className="flex-1 mt-12">
             <h2 className="text-4xl font-bold text-left mb-12">About Me</h2>
             <p className="text-lg mb-8">
-              I'm a Marine Science graduate with a passion for full-stack
-              JavaScript development. I’m excited to transition into tech,
-              applying my analytical background to build responsive,
-              user-friendly web applications. Eager to learn and grow, I’m
-              driven to create meaningful digital solutions.
+              I'm a self taught programmer with a passion for full-stack and
+              front-end JavaScript development. I’m excited into tech, applying
+              my analytical background to build responsive, user-friendly web
+              applications. Eager to learn and grow, I’m driven to create
+              meaningful digital solutions.
             </p>
           </div>
         </div>

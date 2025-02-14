@@ -1,5 +1,6 @@
 import React from "react";
 import Profile from "../assets/2011101010012.png";
+import { CloudDownload } from "lucide-react";
 export default function Hero() {
   return (
     <div className="bg-black text-white text-center py-16 relative">
@@ -49,13 +50,23 @@ export default function Hero() {
         <p className="mt-4 text-lg text-grey-300 mix-blend-difference">
           I specialize in building modern and responsive web applications
         </p>
-        <div className="mt-8 space-x-4">
-          <button className="bg-gradient-to-r from-green-500 to-blue-500 hidden md:inline   transition duration-300 hover:scale-105 px-4 py-2 rounded-full">
-            Contact Me
-          </button>
-          <button className="bg-gradient-to-l from-green-500 to-blue-500 hidden md:inline   transition duration-300 hover:scale-105 px-4 py-2 rounded-full">
-            Resume
-          </button>
+        <div className="mt-8 space-x-4 flex justify-center">
+          <div>
+            <button className="bg-gradient-to-r from-green-500 to-blue-500 hidden md:inline   transition duration-300 hover:scale-105 px-4 py-2 rounded-full">
+              Contact Me
+            </button>
+          </div>
+          <div className="flex bg-gradient-to-r transition duration-300 from-green-500 to-blue-500 w-fit rounded-full px-5 gap-1 hover:scale-105">
+            <CloudDownload className="mt-2" />
+            <button>
+              <a
+                href="/CV M.Hilal Hidayah.pdf"
+                download="CV M.Hilal Hidayah.pdf"
+              >
+                Resume
+              </a>
+            </button>
+          </div>
         </div>
       </div>
     </div>

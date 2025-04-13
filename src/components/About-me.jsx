@@ -3,8 +3,7 @@ import AboutImg from "../assets/About-me.jpg";
 
 export default function About() {
   return (
-    <div className="bg-black text-white py-20" id="about">
-      <hr />
+    <div className="bg-black text-white " id="about">
       <div className="container mx-auto px-7 md:px-16 lg:px-24">
         <div className="flex flex-col md:flex-row items-center md:space-x-12">
           <img

@@ -1,74 +1,31 @@
 import React from "react";
 import Profile from "../assets/2011101010012.png";
 import { CloudDownload } from "lucide-react";
+import ShinyText from "../blocks/TextAnimations/ShinyText/ShinyText";
+import Threads from "../blocks/Backgrounds/Threads/Threads";
 export default function Hero() {
   return (
-    <div className="bg-black text-white text-center py-16 relative">
-      <div className="absolute w-[600px] h-[600px] blur-lg left-80">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#A7F0BA" transform="translate(100 50)">
-            <animate
-              attributeName="d"
-              dur={100}
-              repeatCount="indefinite"
-              values="M51.6,-20.2C57,0,44.9,22.6,26.7,35.4C8.6,48.3,-15.6,51.5,-30.3,41C-45,30.5,-50.2,6.2,-43.6,-15.6C-37,-37.4,-18.5,-56.8,2.3,-57.6C23.1,-58.3,46.1,-40.4,51.6,-20.2Z;M53.1,-20.1C61.1,7.5,54.7,37,34.9,52.4C15.1,67.8,-18.1,69.2,-37.3,54.6C-56.4,39.9,-61.6,9.1,-53,-19.2C-44.5,-47.5,-22.2,-73.3,0.1,-73.4C22.5,-73.4,45,-47.7,53.1,-20.1Z;M53,-17.5C59.5,3,49.5,28.6,31,41.9C12.5,55.2,-14.4,56.1,-35.3,42.4C-56.1,28.7,-70.9,0.4,-64,-20.5C-57.1,-41.4,-28.6,-55,-2.7,-54.2C23.2,-53.3,46.4,-37.9,53,-17.5Z;M42.7,-15.6C49,5.3,43.2,28.4,25.9,42.6C8.6,56.9,-20.3,62.2,-36.4,50.4C-52.6,38.6,-56.1,9.6,-47.9,-14C-39.8,-37.6,-19.9,-55.8,-0.8,-55.5C18.2,-55.3,36.5,-36.5,42.7,-15.6Z;M51,-15.8C60.2,11.7,57.7,43.8,41.7,54.8C25.7,65.8,-3.7,55.7,-26.5,38.6C-49.3,21.6,-65.4,-2.5,-59.9,-24.9C-54.4,-47.4,-27.2,-68.3,-3.1,-67.3C20.9,-66.3,41.8,-43.3,51,-15.8Z;M53,-16.7C60.4,5.6,52.5,33.4,33.7,47.3C14.9,61.2,-14.8,61.2,-36.3,46.4C-57.9,31.6,-71.3,2,-63.9,-20.2C-56.5,-42.5,-28.3,-57.5,-2.7,-56.6C22.8,-55.7,45.6,-39,53,-16.7Z;M61.5,-21.8C68,0.3,53.8,27.3,31.1,44C8.5,60.7,-22.5,67.1,-38.4,55C-54.3,42.9,-55.1,12.4,-46.2,-12.9C-37.3,-38.1,-18.7,-58.1,4.4,-59.5C27.4,-60.9,54.9,-43.8,61.5,-21.8Z;M54.6,-22.2C59.7,-2,45.2,20.1,23.3,37.2C1.4,54.3,-27.9,66.5,-42.7,56.3C-57.5,46.1,-57.8,13.6,-48.3,-12.7C-38.8,-39,-19.4,-59,2.7,-59.9C24.7,-60.8,49.5,-42.4,54.6,-22.2Z;M67.1,-25.6C73.6,-2,56.1,25.6,32.5,42.1C8.9,58.6,-20.8,64.1,-36.4,52.2C-52,40.4,-53.4,11.3,-45,-15C-36.6,-41.4,-18.3,-65,6,-66.9C30.3,-68.9,60.7,-49.2,67.1,-25.6Z;M49.2,-19.1C56.6,6.7,50.4,33.7,33.2,46.4C15.9,59.1,-12.3,57.5,-30.4,43.8C-48.6,30.2,-56.6,4.6,-49.8,-20.4C-43.1,-45.3,-21.5,-69.6,-0.3,-69.5C20.9,-69.4,41.9,-44.9,49.2,-19.1Z
-            "
-            >
-              {" "}
-            </animate>
-          </path>
-        </svg>
-      </div>
-      <div className="absolute w-[600px] h-[600px]  blur-sm left-80">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="#A7F0BA" transform="translate(100 50)">
-            <animate
-              attributeName="d"
-              dur={100}
-              repeatCount="indefinite"
-              values="M51.6,-20.2C57,0,44.9,22.6,26.7,35.4C8.6,48.3,-15.6,51.5,-30.3,41C-45,30.5,-50.2,6.2,-43.6,-15.6C-37,-37.4,-18.5,-56.8,2.3,-57.6C23.1,-58.3,46.1,-40.4,51.6,-20.2Z;M53.1,-20.1C61.1,7.5,54.7,37,34.9,52.4C15.1,67.8,-18.1,69.2,-37.3,54.6C-56.4,39.9,-61.6,9.1,-53,-19.2C-44.5,-47.5,-22.2,-73.3,0.1,-73.4C22.5,-73.4,45,-47.7,53.1,-20.1Z;M53,-17.5C59.5,3,49.5,28.6,31,41.9C12.5,55.2,-14.4,56.1,-35.3,42.4C-56.1,28.7,-70.9,0.4,-64,-20.5C-57.1,-41.4,-28.6,-55,-2.7,-54.2C23.2,-53.3,46.4,-37.9,53,-17.5Z;M42.7,-15.6C49,5.3,43.2,28.4,25.9,42.6C8.6,56.9,-20.3,62.2,-36.4,50.4C-52.6,38.6,-56.1,9.6,-47.9,-14C-39.8,-37.6,-19.9,-55.8,-0.8,-55.5C18.2,-55.3,36.5,-36.5,42.7,-15.6Z;M51,-15.8C60.2,11.7,57.7,43.8,41.7,54.8C25.7,65.8,-3.7,55.7,-26.5,38.6C-49.3,21.6,-65.4,-2.5,-59.9,-24.9C-54.4,-47.4,-27.2,-68.3,-3.1,-67.3C20.9,-66.3,41.8,-43.3,51,-15.8Z;M53,-16.7C60.4,5.6,52.5,33.4,33.7,47.3C14.9,61.2,-14.8,61.2,-36.3,46.4C-57.9,31.6,-71.3,2,-63.9,-20.2C-56.5,-42.5,-28.3,-57.5,-2.7,-56.6C22.8,-55.7,45.6,-39,53,-16.7Z;M61.5,-21.8C68,0.3,53.8,27.3,31.1,44C8.5,60.7,-22.5,67.1,-38.4,55C-54.3,42.9,-55.1,12.4,-46.2,-12.9C-37.3,-38.1,-18.7,-58.1,4.4,-59.5C27.4,-60.9,54.9,-43.8,61.5,-21.8Z;M54.6,-22.2C59.7,-2,45.2,20.1,23.3,37.2C1.4,54.3,-27.9,66.5,-42.7,56.3C-57.5,46.1,-57.8,13.6,-48.3,-12.7C-38.8,-39,-19.4,-59,2.7,-59.9C24.7,-60.8,49.5,-42.4,54.6,-22.2Z;M67.1,-25.6C73.6,-2,56.1,25.6,32.5,42.1C8.9,58.6,-20.8,64.1,-36.4,52.2C-52,40.4,-53.4,11.3,-45,-15C-36.6,-41.4,-18.3,-65,6,-66.9C30.3,-68.9,60.7,-49.2,67.1,-25.6Z;M49.2,-19.1C56.6,6.7,50.4,33.7,33.2,46.4C15.9,59.1,-12.3,57.5,-30.4,43.8C-48.6,30.2,-56.6,4.6,-49.8,-20.4C-43.1,-45.3,-21.5,-69.6,-0.3,-69.5C20.9,-69.4,41.9,-44.9,49.2,-19.1Z
-            "
-            >
-              {" "}
-            </animate>
-          </path>
-        </svg>
-      </div>
-      <div className="relative">
-        <img
-          src={Profile}
-          alt="profile"
-          className="grayscale-[50%] mx-auto mb-8 w-48 h-48 rounded-full object-cover transition duration-300 hover:scale-105"
-        />
-        <h1 className="text-4xl font-bold mix-blend-difference">
-          I'm{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-blue-500">
-            M. Hilal Hidayah
+    <main className="pt-36 bg-black ">
+      <div style={{ width: "100%", height: "400px", position: "relative" }}>
+        <Threads amplitude={1} distance={0.3} enableMouseInteraction={true} />
+        <div className="absolute top-0 left-0 lg:px-48">
+          <span className="text-lg tracking-wider font-inter">
+            Hi, M.Hilal Hidayah
           </span>
-          ,Full-Stack Developer{" "}
-        </h1>
-        <p className="mt-4 text-lg text-grey-300 mix-blend-difference">
-          I specialize in building modern and responsive web applications
-        </p>
-        <div className="mt-8 space-x-4 flex justify-center">
-          <div>
-            <button className="bg-gradient-to-r from-green-500 to-blue-500 hidden md:inline   transition duration-300 hover:scale-105 px-4 py-2 rounded-full">
-              Contact Me
-            </button>
-          </div>
-          <div className="flex bg-gradient-to-r transition duration-300 from-green-500 to-blue-500 w-fit rounded-full px-5 gap-1 hover:scale-105">
-            <CloudDownload className="mt-2" />
-            <button>
-              <a
-                href="/CV M.Hilal Hidayah.pdf"
-                download="CV M.Hilal Hidayah.pdf"
-              >
-                Resume
-              </a>
-            </button>
-          </div>
+          <section className="flex justify-center items-center space-x-14">
+            <ShinyText
+              text="Web  Developer"
+              disabled={false}
+              speed={5}
+              className="custom-class text-[60px]/[60px]"
+            />
+            <p className="text-left text-3xl ml-8 font-inter">
+              Transforming ideas into interactive and seamless digital
+              experiences with cutting-edge frontend development.
+            </p>
+          </section>
         </div>
       </div>
-    </div>
+    </main>
   );
 }

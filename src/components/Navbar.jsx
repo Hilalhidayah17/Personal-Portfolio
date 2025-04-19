@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../assets/logo-header.png";
+import { Download } from "lucide-react";
+import cv from "/CV.pdf";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,9 +26,9 @@ const Navbar = () => {
     } else if (windowY > 0 && windowY <= 100) {
       return "w-[95%]  ";
     } else if (windowY > 100 && windowY <= 200) {
-      return "w-[90%]   ";
+      return "w-[90%] text-xs   ";
     } else {
-      return "w-[80%]  ";
+      return "w-[80%] text-xs  ";
     }
   };
 
@@ -53,7 +55,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigation */}
-        <div className="space-x-4 md:space-x-6 text-sm md:text-base">
+        <div className="space-x-4 md:space-x-6 text-xs md:text-base">
           <a
             href="#home"
             className="hover:text-green-400 hover:underline underline-offset-4 decoration-green-400 transition-all duration-200"
@@ -82,10 +84,11 @@ const Navbar = () => {
 
         {/* Button */}
         <a
-          href="#contact"
-          className="bg-gradient-to-r from-green-500 to-blue-500 hidden md:inline transition duration-200 hover:scale-105 px-4 py-2 rounded-full text-sm"
+          href={cv}
+          className="bg-gradient-to-r from-green-500 to-blue-500 hidden md:flex gap-1 justify-center items-center transition duration-200 hover:scale-105 px-4 py-2 rounded-full text-sm cursor-pointer"
         >
-          Connect Me
+          <Download />
+          My Resume
         </a>
       </div>
     </nav>

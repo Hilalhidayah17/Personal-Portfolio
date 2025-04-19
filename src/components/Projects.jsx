@@ -26,21 +26,21 @@ const projects = [
     name: "OnFeet",
     image: onfeet,
     technologies: "ReactJs, Redux, Firebase",
-    link: "",
+    link: "http://cms-project-online-shop.web.app/",
   },
   {
     id: 4,
     name: "News-App",
     image: ynews,
     technologies: "NextJS, Typescript",
-    link: "",
+    link: "https://news-app-3t3p.vercel.app/",
   },
   {
     id: 5,
     name: "FlowFin",
     image: flowfin,
     technologies: "NextJS, Typescript",
-    link: "",
+    link: "https://github.com/BusinessBudgetingApp/FlowFin",
   },
 ];
 

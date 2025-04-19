@@ -62,13 +62,13 @@ const TechGrid = () => {
   const startIndex = Math.floor((totalBoxes - techIcons.length) / 2);
 
   return (
-    <div className="bg-black h-fit ">
+    <div className="bg-black h-fit hidden">
       <h2 className="text-center text-3xl md:text-4xl font-semibold text-white mb-10">
         Techstack <span className="text-purple-400">I Use</span>{" "}
         <span className="text-sky-400">on a Daily Basis</span>
       </h2>
 
-      <section className=" relative hidden min-w-full items-center justify-center gap-6 md:flex overflow-hidden">
+      <section className=" relative  min-w-full items-center justify-center gap-6 md:flex overflow-hidden">
         {Array.from({ length: totalBoxes }).map((_, idx) => {
           const iconIndex = idx - startIndex;
           const iconData = techIcons[iconIndex];

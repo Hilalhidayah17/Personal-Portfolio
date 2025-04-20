@@ -62,7 +62,7 @@ const TechGrid = () => {
   const startIndex = Math.floor((totalBoxes - techIcons.length) / 2);
 
   return (
-    <div className="bg-black h-fit hidden">
+    <div className="bg-black h-fit hidden md:block">
       <h2 className="text-center text-3xl md:text-4xl font-semibold text-white mb-10">
         Techstack <span className="text-purple-400">I Use</span>{" "}
         <span className="text-sky-400">on a Daily Basis</span>
